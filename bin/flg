@@ -11,4 +11,4 @@ include Flg::Template
 _source = open('./generators/flg').read
 eval(_source)
 
-run(ARGV)
+exit run(ARGV)

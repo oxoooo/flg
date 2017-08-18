@@ -1,5 +1,7 @@
 # Flg
 
+一个简单的生成器工具
+
 ## File API
 http://ruby-doc.org/stdlib-2.4.1/libdoc/fileutils/rdoc/FileUtils.html
 

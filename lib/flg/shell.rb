@@ -1,12 +1,12 @@
 require 'pathname'
 require 'fileutils'
 
+
 module Flg
   module Shell
     def shell(str)
-      exec(str) if !str.nil? and str != ''
-    rescue ArgumentError
-      nil
+      cmd = TTY::Command.new
+      cmd.run str
     end
 
     def file(path)
