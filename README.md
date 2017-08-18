@@ -1,14 +1,33 @@
 # Flg
 
-一个简单的生成器工具
+一个简单的生成器工具, 解决了生产力问题
 
-## File API
-http://ruby-doc.org/stdlib-2.4.1/libdoc/fileutils/rdoc/FileUtils.html
+## 安装
 
+1. 安装 Ruby 版本要求2.0以上
+2. gem install flg
 
-## Data handle
+如果安装很慢的话，请使用国内[ruby源](https://gems.ruby-china.org/)
 
-support active_support
+## 使用
+
+1. 在你的项目里新建 generators 文件夹
+2. 在 generators 里面创建 flg 目录
+3. 上面的 generators 是一个例子
+
+## API 备忘
+
+### commod
+
+[link](http://naildrivin5.com/gli/)
+
+### File API
+
+[link](http://ruby-doc.org/stdlib-2.4.1/libdoc/fileutils/rdoc/FileUtils.html)
+
+### Data handle
+
+> support active_support
 
 ```ruby
 'active_record'.camelize                # => "ActiveRecord"
@@ -83,37 +102,4 @@ ActiveModel'.underscore         # => "active_model"
 'ley'.pluralize(:es)         # => "leyes"
 'ley'.pluralize(1, :es)      # => "ley"
 ```
-
-```ruby
-
-```
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'flg'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install flg
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/mj/flg.
 
