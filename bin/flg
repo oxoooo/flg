@@ -1,11 +1,14 @@
 #!/usr/bin/env ruby
-require 'gli'
 require 'flg'
+require 'gli'
+require 'fileutils'
 
+include FileUtils
 include GLI::App
 include Flg::Shell
+include Flg::Template
 
-file = open('./generators/flg').read
-eval(file)
+_source = open('./generators/flg').read
+eval(_source)
 
-exit run(ARGV)
+run(ARGV)
