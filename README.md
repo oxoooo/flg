@@ -1,6 +1,6 @@
 # Flg
 
-一个简单的生成器工具, 解决了生产力问题
+本工具是一个团队效率工具，快速构建非rails项目的脚手架，兼容其他语言。
 
 ## 安装
 
@@ -21,9 +21,12 @@
 
 [link](http://naildrivin5.com/gli/)
 
+### TTY
+[link]()
+
 ### File API
 
-[link](http://ruby-doc.org/stdlib-2.4.1/libdoc/fileutils/rdoc/FileUtils.html)
+[link](https://github.com/piotrmurach/tty-file)
 
 ### Data handle
 

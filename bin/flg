@@ -8,7 +8,46 @@ include GLI::App
 include Flg::Shell
 include Flg::Template
 
-_source = open('./generators/flg').read
-eval(_source)
+begin
+  _source = open('./generators/flg.rb').read
+  eval(_source)
+rescue Errno::ENOENT => e
+  nil
+end
+
+
+demo_str = """
+program_desc '命令行描述'
+
+desc '简短说明'
+long_desc '长说明'
+command :add do |c|
+  c.action do |global, options, args|
+    say 'hello word'
+  end
+end
+"""
+
+desc 'init project'
+long_desc """
+flg init
+flg init git@github.com:oxoooo/demo.git
+"""
+command :init do |c|
+  c.action do |global, options, args|
+    if args.first.blank?
+      tree = {
+        'generators' => [
+          ['flg', demo_str],
+          'templates' => [],
+          'assets' => []
+        ]
+      }
+      TTY::File.create_dir(tree)
+    else
+      shell "git submodule add #{args.first} generators"
+    end
+  end
+end
 
 exit run(ARGV)

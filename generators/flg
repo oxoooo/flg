@@ -4,7 +4,7 @@ desc '简短说明'
 long_desc '长说明'
 command :add do |c|
   c.action do |global, options, args|
-    puts args
+    say "hello word"
   end
 end
 
@@ -16,13 +16,13 @@ end
 
 command :mkdir do |c|
   c.action do |global, options, args|
-    mkdir_p "./demo"
+    copy_file "a.text", "./app.txt"
   end
 end
 
 command :t do |c|
   c.action do |global, options, args|
-    render name: 'demo.js.erb',
+    template name: 'demo.js.erb',
            data: {
             class_name: args.first.camelize
            },
