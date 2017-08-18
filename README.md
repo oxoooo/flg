@@ -47,7 +47,7 @@
 ```
 
 ```ruby
-ActiveModel'.underscore         # => "active_model"
+'ActiveModel'.underscore         # => "active_model"
 'ActiveModel::Errors'.underscore # => "active_model/errors"
 ```
 
@@ -102,4 +102,3 @@ ActiveModel'.underscore         # => "active_model"
 'ley'.pluralize(:es)         # => "leyes"
 'ley'.pluralize(1, :es)      # => "ley"
 ```
-
