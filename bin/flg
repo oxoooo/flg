@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+require 'gli'
+require 'flg'
+
+include GLI::App
+include Flg::Shell
+
+file = open('./generators/flg').read
+eval(file)
+
+exit run(ARGV)
