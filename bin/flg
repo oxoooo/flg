@@ -46,7 +46,7 @@ command :start do |c|
       TTY::File.create_dir(tree)
     else
       shell "git clone #{args.first} generators"
-      shell "rm -rf ./generators/.git"
+      remove_file "./generators/.git"
     end
   end
 end
