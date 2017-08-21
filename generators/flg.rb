@@ -4,7 +4,7 @@ desc '简短说明'
 long_desc '长说明'
 command :add do |c|
   c.action do |global, options, args|
-    say "hello word"
+    say 'active_record'.camelize
   end
 end
 

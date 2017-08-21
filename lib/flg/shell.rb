@@ -17,7 +17,7 @@ module Flg
 
     def say(str)
       prompt = TTY::Prompt.new
-      prompt.say str
+      prompt.say strcore
     end
 
     def ok(str)
