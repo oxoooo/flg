@@ -11,6 +11,8 @@
 
 ## 使用
 
+你可以使用 flg start 来新建一个项目，或者 flg start url 来同步已经有的模板库
+
 1. 在你的项目里新建 generators 文件夹
 2. 在 generators 里面创建 flg 目录
 3. 上面的 generators 是一个例子

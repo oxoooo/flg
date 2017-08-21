@@ -17,7 +17,7 @@ module Flg
 
     def say(str)
       prompt = TTY::Prompt.new
-      prompt.say strcore
+      prompt.say str
     end
 
     def ok(str)
@@ -32,7 +32,7 @@ module Flg
 
     def error(str)
       prompt = TTY::Prompt.new
-      prompt.warn error
+      prompt.warn str
     end
 
     def copy_file(name, path)
