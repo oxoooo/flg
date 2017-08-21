@@ -1,7 +1,8 @@
 require "flg/version"
-require "flg/shell"
-require 'flg/template'
+
 require 'active_support/all'
+require 'flg/shell'
+require 'flg/template'
 require 'tty'
 
 module Flg
